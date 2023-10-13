@@ -1,0 +1,76 @@
+.__experienceContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.__experienceContainer > div {
+    background: var(--color-bg-second);
+    padding: 2.5rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.__experienceContainer > div:hover {
+    background: transparent;
+    border-color: var(--color-primary-second);
+    cursor: default;
+}
+
+.__experienceContainer > div h3{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+}
+
+.__experienceContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+    margin-right: 0;
+}
+
+.__experienceDetails {
+    display: flex;
+    gap: .5rem;
+}
+
+.__experienceDetails h4 {
+    padding-right: 3px;
+}
+
+.__experienceDetailsIcons {
+    margin-top: 6px;
+    color: var(--color-primary);
+    margin-left: 5px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1024px) {
+    .__experienceContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .__experienceContainer > div {
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+
+    .__experienceContent {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .__experienceContainer {
+        gap: 1rem;
+    }
+
+    .__experienceContainer > div {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+}
